@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow — Контакти</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="contacts-page">
+  <a href="#main" class="skip-link">Перейти до основного змісту</a>
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <i class="fa-solid fa-check-circle logo-icon" aria-hidden="true"></i>
+        <h2 class="h1">TaskFlow</h2>
+      </div>
+
+      <nav class="nav-menu" aria-label="Головна навігація">
+        <a href="index.html">Головна</a>
+        <a href="topic.html">Про платформу</a>
+        <a href="contacts.html" aria-current="page">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <nav aria-label="Хлібні крихти">
+      <a href="index.html">Головна</a>
+      <span> / </span>
+      <span>Контакти</span>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <section class="contacts-hero">
+      <div class="hero-content">
+        <h2>Ми завжди на зв'язку</h2>
+        <p>Маєте питання або пропозиції? Напишіть нам — ми відповімо найближчим часом.</p>
+      </div>
+    </section>
+
+    <section class="contacts-section">
+
+      <div class="contact-info-card">
+        <h3>Контактна інформація</h3>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <span>support@taskflow.com</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>+380501234567</span>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <span>Україна</span>
+        </div>
+      </div>
+
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Зворотний зв'язок</legend>
+
+          <div class="form-group">
+            <label for="name">
+              Ім'я
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">
+              Електронна пошта
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" 
+                   pattern="\+380[0-9]{9}" 
+                   aria-describedby="phone-help">
+            <small id="phone-help" class="hint">
+              Формат: +380XXXXXXXXX (наприклад, +380501234567)
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">
+              Повідомлення
+              <span class="required" aria-hidden="true">*</span>
+            </label>
+            <textarea id="message" 
+                      name="message" 
+                      minlength="10" 
+                      required 
+                      aria-describedby="message-help"></textarea>
+            <small id="message-help" class="hint">
+              Мінімум 10 символів
+            </small>
+          </div>
+
+        </fieldset>
+
+        <button type="submit" class="primary-btn">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Надіслати повідомлення
+        </button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <nav class="footer-nav" aria-label="Навігація в підвалі">
+        <a href="index.html">Головна</a>
+        <a href="topic.html">Про платформу</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="#">Політика конфіденційності</a>
+      </nav>
+      <p class="copyright">© 2026 TaskFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

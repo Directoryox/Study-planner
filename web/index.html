@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow — Головна</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="home-page">
+
+  <a href="#main" class="skip-link">Перейти до основного змісту</a>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <i class="fa-solid fa-check-circle logo-icon" aria-hidden="true"></i>
+        <h1>TaskFlow</h1>
+      </div>
+
+      <nav class="nav-menu" aria-label="Головна навігація">
+        <a href="index.html" aria-current="page">Головна</a>
+        <a href="topic.html">Про платформу</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Організуй свої задачі ефективно</h2>
+        <p>Додавай, відстежуй та завершуй задачі швидко і зручно.</p>
+        <button class="primary-btn" type="button">
+          Створити задачу
+        </button>
+      </div>
+    </section>
+
+    <section class="tasks-section">
+      <div class="tasks-container">
+
+        <div class="tasks-header">
+          <h2>Мої задачі</h2>
+          <div class="filters">
+            <button class="filter active" type="button">Всі</button>
+            <button class="filter" type="button">В процесі</button>
+            <button class="filter" type="button">Завершено</button>
+          </div>
+        </div>
+
+        <article class="task-card">
+          <h3>Зробити практичну</h3>
+          <p>Термін: 20 лютого</p>
+          <span class="status in-progress">В процесі</span>
+        </article>
+
+        <article class="task-card completed">
+          <h3>Вивчити HTML</h3>
+          <p>Термін: 15 лютого</p>
+          <span class="status done">Завершено</span>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <nav class="footer-nav" aria-label="Навігація в підвалі">
+        <a href="index.html">Головна</a>
+        <a href="topic.html">Про платформу</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="#">Політика конфіденційності</a>
+      </nav>
+      <p class="copyright">© 2026 TaskFlow. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
